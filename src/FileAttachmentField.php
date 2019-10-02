@@ -1312,7 +1312,7 @@ class FileAttachmentField extends FileField
         }
 
         if($filename) {
-            if($defaultClass == "Image" 
+            if($defaultClass == Image::class 
                 && $this->config()->upgrade_images 
                 && !Injector::inst()->get($class) instanceof Image
             ) {
